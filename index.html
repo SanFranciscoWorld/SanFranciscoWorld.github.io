@@ -150,20 +150,26 @@
   
 <section class="hero teaser">
   <div class="container is-max-desktop">
-            <div class="hero-body" style="text-align: center">
-                <div class="columns is-centered">
-                        <!-- <img src="./static/images/page-head-0018.gif">
-                         -->
-                  <video poster="" autoplay="" muted="" loop="" style="pointer-events: none;"clip-path: inset(500px 0px 0px 500px); 
-                  object-fit: cover; 
-                  width: auto; 
-                  height: auto;">
-                    <source src="./static/videos/teaser_video.mp4" type="video/mp4">
-                  </video>
-                </div>
-            </div>
+    <div class="hero-body" style="text-align: center; position: relative; overflow: hidden; width: 100%; height: auto;">
+      <div class="columns is-centered" style="position: relative; width: 100%; height: 100%; overflow: hidden;">
+        <video 
+          poster="" 
+          autoplay 
+          muted 
+          loop 
+          style="pointer-events: none; 
+                 position: absolute; 
+                 top: -100px; /* 위쪽 자르기 */
+                 left: -100px; /* 왼쪽 자르기 */
+                 width: calc(100% + 20px); /* 잘린 영역을 보완 */
+                 height: auto; 
+                 object-fit: cover;">
+          <source src="./static/videos/teaser_video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
   </div>
-</section> 
+</section>
   
 <section class="section">
   <div class="container is-max-desktop">
