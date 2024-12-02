@@ -170,14 +170,14 @@
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We propose the San Francisco world (SFW) model, a novel structural model inspired by San Francisco’s hilly terrain.
-            Our SFW consists of a single vertical dominant direction (VDD), two horizontal dominant directions (HDDs), and
-            four sloping dominant directions (SDDs) sharing a common inclination angle. Leveraging the structural regularities
-            of SFW, such as uniform inclination angle and geometric patterns of the four SDDs, we design an efficient and robust
-            DD/vanishing point estimation method by aggregating sloping line normals on the Gaussian sphere. We further utilize
-            the structural patterns of SFW for the 3-DoF visual compass, the rotational motion tracking from a single line and plane,
-            which corresponds to the theoretical minimal sampling for 3-DoF rotation estimation. Our method demonstrates enhanced
-            adaptability in more challenging scenes and the highest rotational tracking accuracy compared to state-of-the-art methods.
+          We propose the San Francisco world (SFW) model, a novel structural model inspired by San Francisco's hilly terrain, enabling 3D inter-floor navigation in urban areas rather than being limited to 2D intra-floor navigation of various robotics platforms.
+          Our SFW consists of a single vertical dominant direction (VDD), two horizontal dominant directions (HDDs), and four sloping dominant directions (SDDs) sharing a common inclination angle.
+          Although SFW is a more general model than the Manhattan world (MW), it is a more compact model than the mixture of Manhattan world (MMW).
+          Leveraging the structural regularities of SFW, such as uniform inclination angle and geometric patterns of the four SDDs, we design an efficient and robust DD/vanishing point estimation method by aggregating sloping line normals on the Gaussian sphere.
+          We further utilize the structural patterns of SFW for the 3-DoF visual compass, the rotational motion tracking from a single line and plane, which corresponds to the theoretical minimal sampling for 3-DoF rotation estimation.
+          Our method demonstrates enhanced adaptability in more challenging inter-floor scenes in urban areas and the highest rotational tracking accuracy compared to state-of-the-art methods.
+          We release the first dataset of sequential RGB-D images captured in San Francisco world (SFW) and open source codes at: 
+          <a href="https://SanFranciscoWorld.github.io/" style="color: magenta;">https://SanFranciscoWorld.github.io/</a>.
           </p>
         </div>
       </div>
